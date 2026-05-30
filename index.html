@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тальянов Марк - резюме</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="floatingBackground" aria-hidden="true"></canvas>
+    <div class="background-glow" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#top">Тальянов Марк</a>
+      <nav class="nav" aria-label="Навигация по резюме">
+        <a href="#about">Обо мне</a>
+        <a href="#skills">Навыки</a>
+        <a href="#experience">Опыт</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </header>
+
+    <main id="top" class="page">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Одностраничное резюме</p>
+          <h1 id="hero-title">Тальянов Марк</h1>
+          <p class="lead">
+            Начинающий специалист, который любит аккуратные интерфейсы, ясную
+            структуру и задачи, где нужно быстро разобраться и довести результат
+            до рабочего состояния.
+          </p>
+          <div class="hero-actions" aria-label="Быстрые действия">
+            <a class="button primary" href="#contacts">Связаться</a>
+            <a class="button secondary" href="#experience">Смотреть опыт</a>
+          </div>
+        </div>
+
+        <aside class="profile-panel" aria-label="Краткая информация">
+          <div>
+            <span class="label">Направление</span>
+            <strong>Frontend / Web</strong>
+          </div>
+          <div>
+            <span class="label">Формат</span>
+            <strong>Проекты, стажировка, удаленно</strong>
+          </div>
+          <div>
+            <span class="label">Город</span>
+            <strong>Укажите ваш город</strong>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about" class="section" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="section-number">01</p>
+          <h2 id="about-title">Обо мне</h2>
+        </div>
+        <p class="section-text">
+          Здесь можно написать короткое описание: чем вы занимаетесь, какие
+          задачи вам интересны, какие качества помогают в работе. Например:
+          внимательность к деталям, готовность учиться, ответственность и умение
+          доводить начатое до конца.
+        </p>
+      </section>
+
+      <section id="skills" class="section" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <p class="section-number">02</p>
+          <h2 id="skills-title">Навыки</h2>
+        </div>
+        <div class="skill-grid">
+          <article class="resume-card">
+            <h3>Frontend</h3>
+            <p>HTML, CSS, адаптивная верстка, базовый JavaScript.</p>
+          </article>
+          <article class="resume-card">
+            <h3>Инструменты</h3>
+            <p>Git, VS Code, браузерные DevTools, работа с макетами.</p>
+          </article>
+          <article class="resume-card">
+            <h3>Soft skills</h3>
+            <p>Коммуникация, самоорганизация, внимательность, обучение.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <p class="section-number">03</p>
+          <h2 id="experience-title">Опыт и проекты</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-date">2026</span>
+            <div>
+              <h3>Личный сайт-резюме</h3>
+              <p>
+                Одностраничный сайт с динамическим фоном, адаптивной версткой и
+                понятной структурой резюме.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">Проект</span>
+            <div>
+              <h3>Название вашего проекта</h3>
+              <p>
+                Добавьте 1-2 предложения о задаче, вашей роли и результате:
+                что сделали, чем пользовались, какой получился эффект.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">Учеба</span>
+            <div>
+              <h3>Образование или курс</h3>
+              <p>
+                Укажите учебное заведение, курс, специальность или сертификат,
+                если это важно для вакансии.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contacts" class="section contact-section" aria-labelledby="contacts-title">
+        <div class="section-heading">
+          <p class="section-number">04</p>
+          <h2 id="contacts-title">Контакты</h2>
+        </div>
+        <div class="contact-list">
+          <a href="mailto:mark@example.com">mark@example.com</a>
+          <a href="https://t.me/username">Telegram</a>
+          <a href="https://github.com/username">GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
