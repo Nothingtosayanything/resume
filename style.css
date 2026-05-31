@@ -19,7 +19,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 112px;
+  scroll-padding-top: 24px;
 }
 
 body {
@@ -73,25 +73,22 @@ a {
 }
 
 .topbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 20;
+  position: relative;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  width: 100%;
-  margin: 0;
-  padding: 16px max(16px, calc((100vw - 1120px) / 2));
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 18px 0;
   border-bottom: 1px solid rgba(181, 232, 255, 0.14);
   background: linear-gradient(
     180deg,
-    rgba(5, 18, 40, 0.86),
-    rgba(5, 18, 40, 0.66)
+    rgba(5, 18, 40, 0.72),
+    rgba(5, 18, 40, 0.42)
   );
-  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.18);
   backdrop-filter: blur(22px);
 }
 
@@ -105,9 +102,9 @@ a {
   display: flex;
   align-items: center;
   flex: 0 1 auto;
-  gap: 8px;
+  gap: 6px;
   max-width: 100%;
-  padding: 6px;
+  padding: 5px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: rgba(5, 18, 40, 0.52);
@@ -115,10 +112,10 @@ a {
 }
 
 .nav a {
-  padding: 8px 12px;
+  padding: 7px 11px;
   border-radius: 6px;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 13px;
   transition:
     background 180ms ease,
     color 180ms ease;
@@ -134,7 +131,7 @@ a {
 .page {
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 124px 0 64px;
+  padding: 60px 0 64px;
 }
 
 .hero {
@@ -170,7 +167,7 @@ p {
 h1 {
   max-width: 900px;
   margin-bottom: 20px;
-  font-size: clamp(58px, 10vw, 132px);
+  font-size: clamp(52px, 9vw, 118px);
   line-height: 0.9;
   letter-spacing: 0;
   text-wrap: balance;
@@ -363,7 +360,8 @@ h2 {
   }
 
   .nav {
-    width: 100%;
+    width: auto;
+    max-width: 100%;
     overflow-x: auto;
   }
 
@@ -372,7 +370,7 @@ h2 {
   }
 
   .page {
-    padding-top: 150px;
+    padding-top: 42px;
   }
 
   .hero {
@@ -403,7 +401,7 @@ h2 {
   }
 
   h1 {
-    font-size: clamp(48px, 18vw, 78px);
+    font-size: clamp(42px, 15vw, 66px);
   }
 
   .lead,
