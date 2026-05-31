@@ -365,56 +365,82 @@ h2 {
 
 @media (max-width: 860px) {
   .topbar {
-    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 22px;
+    align-items: stretch;
     flex-direction: column;
+    gap: 18px;
+  }
+
+  .brand {
+    font-size: 20px;
   }
 
   .nav {
-    width: auto;
-    max-width: 100%;
-    overflow-x: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 8px;
+    overflow: visible;
   }
 
   .nav a {
-    flex: 0 0 auto;
+    text-align: center;
+    padding: 12px 8px;
+    font-size: 16px;
   }
 
   .page {
-    padding-top: 42px;
+    width: 100%;
+    padding: 48px 22px 64px;
   }
 
   .hero {
     grid-template-columns: 1fr;
     min-height: auto;
     padding: 42px 0 70px;
+    gap: 28px;
   }
 
-  .section {
-    grid-template-columns: 1fr;
-    gap: 22px;
-    padding: 54px 0;
+  h1 {
+    font-size: clamp(58px, 19vw, 86px);
+    line-height: 0.95;
   }
 
-  .section-heading {
-    position: static;
+  .lead {
+    font-size: 22px;
+    line-height: 1.45;
   }
 
-  .skill-grid {
-    grid-template-columns: 1fr;
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
   }
 }
 
 @media (max-width: 540px) {
-  .topbar,
-  .page {
-    width: min(100% - 22px, 1120px);
+  .topbar {
+  width: 100%;
+}
+
+.page {
+  width: 100%;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+    h1 {
+    font-size: clamp(54px, 17vw, 76px);
+    line-height: 0.95;
   }
 
-  h1 {
-    font-size: clamp(42px, 15vw, 66px);
+  .lead {
+    font-size: 20px;
   }
-
-  .lead,
   .section-text {
     font-size: 17px;
   }
