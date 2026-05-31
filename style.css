@@ -81,12 +81,13 @@ a {
   justify-content: space-between;
   gap: 24px;
 
-  width: min(1120px, calc(100% - 32px));
-  margin: 24px auto 0;
-  padding: 18px 28px;
+  width: 100%;
+  margin: 0;
+  padding: 24px 8vw;
 
-  border: 1px solid rgba(181, 232, 255, 0.14);
-  border-radius: 16px;
+  border: none;
+  border-bottom: 1px solid rgba(181, 232, 255, 0.14);
+  border-radius: 0;
 
   background: linear-gradient(
     180deg,
@@ -94,6 +95,9 @@ a {
     rgba(5, 18, 40, 0.58)
   );
 
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(22px);
+}
   box-shadow: 0 14px 36px rgba(0, 0, 0, 0.18);
   backdrop-filter: blur(22px);
 }
